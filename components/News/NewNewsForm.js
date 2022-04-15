@@ -1,7 +1,6 @@
 import { useRef } from "react";
-
+import classes from "./NewsForm.module.css";
 import Card from "../ui/Card";
-import classes from "./NewMeetupForm.module.css";
 
 function NewNewsForm(props) {
   const titleInputRef = useRef();
@@ -40,7 +39,7 @@ function NewNewsForm(props) {
         </div>
         <div className={classes.control}>
           <label htmlFor="address">Source</label>
-          <input type="text" required id="address" ref={addressInputRef} />
+          <input type="text" required id="source" ref={sourceInputRef} />
         </div>
         <div className={classes.control}>
           <label htmlFor="description">Description</label>

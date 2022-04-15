@@ -1,4 +1,4 @@
-import NewsList from "./components/News/NewsList";
+import NewsList from "../components/News/NewsList";
 const NEWS = [
   {
     id: "n1",

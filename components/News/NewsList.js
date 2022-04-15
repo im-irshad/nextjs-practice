@@ -1,14 +1,14 @@
 import NewsItem from "./NewsItem";
-import classes from "./MeetupList.module.css";
+//import classes from "./MeetupList.module.css";
 
 function NewsList(props) {
   return (
-    <ul className={classes.list}>
+    <ul>
       {props.news.map((newz) => (
         <NewsItem
           key={newz.id}
           id={newz.id}
-          image={newz.image}
+          img={newz.image}
           title={newz.title}
           source={newz.source}
         />
