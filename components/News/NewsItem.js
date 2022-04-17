@@ -1,22 +1,24 @@
-//import Card from "../ui/Card";
-//import classes from "./MeetupItem.module.css";
-import Image from "next/image";
+import Card from "../ui/Card";
+import classes from "./NewsItem.module.css";
 
 function NewsItem(props) {
   return (
-    <li className>
-      <div>
-        <div>
-          <image src={props.image} alt={props.title} width={400} height={500} />
+    <li className={classes.item}>
+      <Card>
+        <div className={classes.image}>
+          <img
+            src="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+            alt={props.title}
+          />
         </div>
-        <div className>
+        <div className={classes.content}>
           <h3>{props.title}</h3>
           <address>{props.address}</address>
         </div>
-        <div>
+        <div className={classes.actions}>
           <button>Show Details</button>
         </div>
-      </div>
+      </Card>
     </li>
   );
 }
